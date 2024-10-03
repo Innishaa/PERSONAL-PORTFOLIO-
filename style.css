@@ -314,21 +314,20 @@ td {
     }
     
     .footer ul {
-        list-style-type: none; /* Remove bullet points */
+        list-style-type: none; 
         padding: 0;
     }
     
     .footer li {
-        display: inline; /* Display list items inline */
-        margin: 0 15px; /* Space between links */
+        display: inline; 
+        margin: 0 15px; 
     }
     
     .footer a {
         color: #fff;
-        text-decoration: none; /* Remove underline */
+        text-decoration: none; 
     }
     
     .footer a:hover {
-        text-decoration: underline; /* Underline on hover */
-    }
+        text-decoration: underline; }
     
