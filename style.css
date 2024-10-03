@@ -1,0 +1,334 @@
+:root {
+    --primary-color:#000807; 
+    --secondary-color: #b3b7ee;
+    --secondary-color-dark:#9395d3;
+    --text-dark:#0d1319;
+    --text-light: #A2A3BB;
+    --white:#FBF9FF; 
+    --max-width:1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background:#000807;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color:#b3b7ee;
+    text-shadow: 0 0 25px #b3b7ee,
+                 0 0 50px  #b3b7ee;
+    transform: scale(1.1);
+}
+nav{
+    position:absolute;
+    width: 100%;
+    top : 0;
+    left : 50%;
+    transform: tranlatex(-50%);
+    max-width: var(--max-width); 
+    padding: 1rem;
+}
+
+span{
+    color: var(--secondary-color);
+
+}
+.navbar a{
+    font-size: 18px;
+    color: #FBF9FF;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:#9395d3;
+    border-bottom: 3px solid #9395d3;
+}
+
+.contact{
+    margin-left: 50px;
+    padding: 10px 20px;
+    background-color: white;
+    color:#000807;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: #A2A3BB;
+    box-shadow:0 0 25px #9395d3;
+    color: white;
+}
+.home{
+    height: 100vh;
+    background-image: url("header-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__title{
+    font-size: 2 rem;
+    font-weight: 600;
+    text-align: left;
+    max-width: 450px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color-dark);
+}
+
+body{
+    color: var(--black);
+    font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+.home-content{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    border-left: 10px;
+    padding-left: 100px;
+    padding-top: 200px;
+}
+.home-content p {
+    color:var(--secondary-color);
+    max-width: 400px;
+    margin: 2rem 0;
+}
+
+.home-content p span {
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color-dark);
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+.home-content h1{
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--white);
+    align-items: right;
+}
+
+.btn-1 {
+    padding:15px 28px;
+    background-color:var(--secondary-color-dark);
+    color: #000807;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color:white;
+    color:black;
+    border:2px solid #000807;
+}
+.btn-2{padding:15px 28px;
+    background-color:#FBF9FF;
+    color: #000807;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color:white;
+    color:#9395d3;
+    border:2px solid #000807;
+}
+
+
+.about-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.about-section h2 {
+    text-align: center;
+    color:#000807;
+}
+
+.about-section h3 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, td {
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+.icon {
+    width: 24px;
+    height: auto;
+}
+
+
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 26px;
+}
+
+.contact form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color:#000807;
+    background: #FBF9FF;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+} 
+ 
+
+.social-media {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.social-media h2 {
+    text-align: center;
+    color:#000807;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 10px 0;
+}
+
+.social-media a {
+    text-align: center;
+    text-decoration: none;
+    color: #b3b7ee; 
+    font-weight: bold;
+}
+
+.social-media a:hover {
+    color: #9395d3; 
+}
+.projects-section {
+    margin: 20px 0; }
+
+.projects-section h2 {
+    text-align: center;
+    color:#000807;
+    margin-bottom: 10px; 
+}
+
+.projects-section p {
+    text-align: center;
+    margin-bottom: 15px; 
+}
+
+.projects-section ul {
+    list-style-type: none;
+}
+.projects-section li {
+    margin: 5px 0; 
+    text-align: center; }
+
+    .footer {
+        background-color:#000807;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px; 
+    }
+    
+    .footer p {
+        margin: 5px 0; 
+    }
+    
+    .footer ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0;
+    }
+    
+    .footer li {
+        display: inline; /* Display list items inline */
+        margin: 0 15px; /* Space between links */
+    }
+    
+    .footer a {
+        color: #fff;
+        text-decoration: none; /* Remove underline */
+    }
+    
+    .footer a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    
